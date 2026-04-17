@@ -113,7 +113,7 @@ function loadPage(page) {
 }
 
 window.onload = function () {
-    loadPage('main.html');
+    loadPage('index.html');
 };
 
 
