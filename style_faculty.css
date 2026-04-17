@@ -1,0 +1,875 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    background: #f5b400;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 40px;
+    font-size: 14px;
+}
+
+.top-left span {
+    margin-right: 20px;
+}
+
+.top-right a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.top-right a:hover {
+    color: #f5b400;
+}
+.top-left a {
+    color: black;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.top-left a:hover {
+    color: #f5b400;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1f44;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    background: #f5b400;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 31, 68, 0.7);
+}
+
+/* Hero content */
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content span {
+    color: #f5b400;
+}
+
+.tag {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cta {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #f5b400;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+/* Text */
+.about-text {
+    max-width: 500px;
+}
+
+.about-tag {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #888;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.about-text span {
+    color: #f5b400;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #f5b400;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= VIDEO ================= */
+
+.about-video {
+    position: relative;
+}
+
+.about-video {
+    width: 100%;
+    max-width: 550px;
+}
+
+.about-video video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Play Button */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: #f5b400;
+    color: white;
+    font-size: 22px;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ================= READ MORE ANIMATION ================= */
+
+#moreText {
+    transition: all 0.3s ease;
+}
+/* ================= COURSES ================= */
+
+.courses {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-tag {
+    letter-spacing: 2px;
+    color: #888;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Card */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    padding: 10px;
+}
+
+.course-card p {
+    padding: 0 10px 15px;
+    color: #555;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Hidden cards */
+.hidden {
+    display: none;
+}
+
+/* Button */
+.view-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #f5b400;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ================= VIDEO TOUR SECTION ================= */
+
+.video-section {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+/* Small tag */
+.video-tag {
+    letter-spacing: 2px;
+    color: #f5b400;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.video-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Video box */
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Play button */
+.video-container .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: #f5b400;
+    color: #0a1f44;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* ================= FACULTY SECTION ================= */
+
+.faculty {
+    padding: 80px 0;
+    text-align: center;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff 40%,
+        #0a1f44 40%
+        
+    );
+}
+
+.faculty h2 {
+    margin-bottom: 40px;
+    color: #0a1f44;
+}
+
+.section-tag {
+    color: #888;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* ================= SLIDER ================= */
+
+.faculty-slider {
+    position: relative;
+    width: 100%;
+}
+
+/* Viewport */
+.faculty-viewport {
+    overflow: hidden;
+}
+
+/* Track */
+.faculty-track {
+    display: flex;
+    align-items: stretch;
+    transition: transform 0.5s ease;
+}
+
+/* ================= CARD ================= */
+
+.faculty-card {
+    min-width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Inner card box */
+.faculty-card > div {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    aspect-ratio: 9 / 16;   /* 🔥 MAIN FIX */
+}
+
+/* Image */
+.faculty-card img {
+    width: 100%;
+    height: 55%;   /* top portion */
+    object-fit: cover;
+}
+
+/* Info */
+.faculty-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.faculty-info h3 {
+    margin: 0;
+    color: #0a1f44;
+}
+
+.role {
+    color: #f5b400;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+.faculty-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.socials {
+    margin-top: auto;
+}
+
+.socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0a1f44;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #f5b400;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.faculty-card:hover > div {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= NAV BUTTONS ================= */
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background: #f5b400;
+    color: #0a1f44;
+
+    border: none;
+    font-size: 22px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #ffd24d;
+}
+
+/* Left button */
+.left {
+    left: -25px;
+}
+
+/* Right button */
+.right {
+    right: -25px;
+}
+.faculty-slider {
+    max-width: 1000px;   /* 🔥 controls total width */
+    margin: auto;        /* centers it */
+    position: relative;
+}
+.faculty-viewport {
+    overflow: hidden;
+    padding: 0 10px;
+}
+/* ================= EVENTS ================= */
+
+.events {
+    padding: 80px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Grid centered */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+.event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Image */
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content layout */
+.event-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Date */
+.event-date {
+    background: #f5b400;
+    color: #0a1f44;
+    padding: 15px;
+    text-align: center;
+    min-width: 70px;
+}
+
+/* Info */
+.event-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.event-info h4 {
+    margin: 0;
+    color: #0a1f44;
+}
+
+.event-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* ================= POPUP ================= */
+
+.event-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(10, 31, 68, 0.8);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+/* Popup card */
+.popup-content {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    width: 500px;
+    max-width: 90%;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    position: relative;
+
+    text-align: center;
+}
+
+/* Image */
+.popup-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Text */
+.popup-text {
+    padding: 20px;
+}
+
+.popup-text h2 {
+    color: #0a1f44;
+    margin-bottom: 10px;
+}
+
+.popup-time {
+    color: #f5b400;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-text p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* ================= TESTIMONIALS ================= */
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+    padding: 80px 0;
+    background: #f8f9fb;
+    text-align: center;
+}
+
+/* Slider */
+.testimonial-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.testimonial-viewport {
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Card */
+.testimonial-card {
+    min-width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonial-card h3 {
+    margin: 10px 0 5px;
+    color: #0a1f44;
+}
+
+.role {
+    color: #f5b400;
+    font-size: 14px;
+}
+
+.desc {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f5b400;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left { left: -20px; }
+.right { right: -20px; }
+/* ================= MINI SLIDER ================= */
+
+.faculty-mini-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.mini-viewport {
+    width: 400px;
+    overflow: hidden;
+}
+
+.mini-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.mini-card {
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mini-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.mini-card:hover img {
+    border: 3px solid #f5b400;
+}
+
+/* ================= EXPANDED ================= */
+.faculty-select {
+    padding: 80px 0;
+    text-align: center;
+
+    background: linear-gradient(
+        to bottom,
+        #0a1f44 40%,
+        #ffffff 40%
+    );
+}
+.mini-card p {
+    color: white;   /* 🔥 FIX */
+    font-size: 14px;
+    margin-top: 5px;
+}
+.faculty-select h2 {
+    color: white;
+}
+.faculty-display {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.faculty-display {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.main-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.role {
+    color: #f5b400;
+}
+
+/* ================= WORK SLIDER ================= */
+
+.work-slider {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-viewport {
+    width: 300px;
+    overflow: hidden;
+}
+
+.work-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.work-track img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #0a1f44;
+    color: #ddd;
+    padding-top: 60px;
+}
+
+/* Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/* Headings */
+.footer-col h3,
+.footer-col h4 {
+    color: #f5b400;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f5b400;
+}
+
+/* Social */
+.socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #f5b400;
+}
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

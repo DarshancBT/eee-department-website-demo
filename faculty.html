@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>EEE Department</title>
+    <link rel="stylesheet" href="style_faculty.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="top-bar">
+
+    <div class="top-left">
+        <span>📞 +91 xxxxxxxxxx</span>
+        <span>
+    ✉ <a href="mailto:cd546690@gmail.com">cd546690@gmail.com</a>
+</span>
+    </div>
+
+    <div class="top-right">
+    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://X.com"><i class="fab fa-twitter"></i></a>
+</div>
+
+</div>
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">EEE Dept</div>
+<nav>
+    <a href="main.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="faculty.html">Faculties</a>
+    <a href="labs.html">Labs</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+</nav>
+    <button class="btn">Explore</button>
+</header>
+<section class="hero">
+    <!--<img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94" alt="Campus">-->
+    <img src="images/PH.png" alt="Campus">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Our <br><span>Faculties</span></h1>
+
+    </div>
+</section>
+<section class="faculty-select">
+
+    <div class="container">
+
+        <h2>Our Faculty</h2>
+
+        <!-- MINI SLIDER -->
+        <div class="faculty-mini-slider">
+
+            <button onclick="miniLeft()">❮</button>
+
+            <div class="mini-viewport">
+                <div class="mini-track" id="miniTrack">
+
+                    <!-- FACULTY 1 -->
+                    <div class="mini-card" onclick="showFaculty(
+                        'Dr. Anjali Sharma',
+                        'Power Systems',
+                        'Expert in smart grid and energy systems.',
+                        'https://randomuser.me/api/portraits/women/50.jpg',
+                        [
+                            'images/PH.png',
+                            'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1',
+                            'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e'
+                        ]
+                    )">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg">
+                        <p>Anjali</p>
+                    </div>
+
+                    <!-- FACULTY 2 -->
+                    <div class="mini-card" onclick="showFaculty(
+                        'Prof. Ramesh Kumar',
+                        'Embedded Systems',
+                        'Specialist in IoT and microcontrollers.',
+                        'https://randomuser.me/api/portraits/men/60.jpg',
+                        [
+                            'https://images.unsplash.com/photo-1518770660439-4636190af475',
+                            'https://images.unsplash.com/photo-1581090700227-1e8a6c7bcd2f'
+                        ]
+                    )">
+                        <img src="https://randomuser.me/api/portraits/men/60.jpg">
+                        <p>Ramesh</p>
+                    </div>
+
+                    <!-- FACULTY 3 -->
+                    <div class="mini-card" onclick="showFaculty(
+                        'Dr. Vivek Rao',
+                        'Control Systems',
+                        'Focus on robotics and automation.',
+                        'https://randomuser.me/api/portraits/men/70.jpg',
+                        [
+                            'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
+                            'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5'
+                        ]
+                    )">
+                        <img src="https://randomuser.me/api/portraits/men/70.jpg">
+                        <p>Vivek</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button onclick="miniRight()">❯</button>
+
+        </div>
+
+        <!-- EXPANDED DISPLAY -->
+        <div class="faculty-display">
+
+            <img id="facImg" class="main-img">
+
+            <h3 id="facName"></h3>
+            <p class="role" id="facRole"></p>
+            <p id="facDesc"></p>
+
+            <!-- WORK SLIDER -->
+            <div class="work-slider">
+
+                <button onclick="workLeft()">❮</button>
+
+                <div class="work-viewport">
+                    <div class="work-track" id="workTrack"></div>
+                </div>
+
+                <button onclick="workRight()">❯</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col">
+            <h3 class="logo">EEE Dept</h3>
+            <p class="tagline">Powering the Future ⚡</p>
+
+            <p><strong>Office Address</strong><br>
+            VVCE Mysuru, Karnataka</p>
+
+            <p><strong>Phone</strong><br>
+            +91 XXXXX XXXXX</p>
+
+            <p><strong>Email</strong><br>
+            eee@vvce.ac.in</p>
+
+            <div class="socials">
+                <a href="#">f</a>
+                <a href="#">t</a>
+                <a href="#">in</a>
+            </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Labs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col">
+            <h4>Working Hours</h4>
+            <p>Mon - Fri: 9:00 AM - 4:30 PM</p>
+            <p>Saturday: 9:00 AM - 1:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 EEE Department | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script src="script_faculty.js"></script>
+</body>
+</html>
