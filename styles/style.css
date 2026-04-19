@@ -1,0 +1,939 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    background: #D4AF37;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 40px;
+    font-size: 14px;
+}
+
+.top-left span {
+    margin-right: 20px;
+}
+
+.top-right a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.top-right a:hover {
+    color: #D4AF37;
+}
+.top-left a {
+    color: black;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.top-left a:hover {
+    color: #D4AF37;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1f44;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    background: #D4AF37;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 31, 68, 0.7);
+}
+
+/* Hero content */
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content span {
+    color: #D4AF37;
+}
+
+.tag {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cta {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #D4AF37;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+/* Text */
+.about-text {
+    max-width: 500px;
+}
+
+.about-tag {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #888;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.about-text span {
+    color: #D4AF37;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #D4AF37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= VIDEO ================= */
+
+.about-video {
+    position: relative;
+}
+
+.about-video {
+    width: 100%;
+    max-width: 550px;
+}
+
+.about-video video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Play Button */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: #D4AF37;
+    color: white;
+    font-size: 22px;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ================= READ MORE ANIMATION ================= */
+
+#moreText {
+    transition: all 0.3s ease;
+}
+/* ================= COURSES ================= */
+
+.courses {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-tag {
+    letter-spacing: 2px;
+    color: #888;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Card */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    padding: 10px;
+}
+
+.course-card p {
+    padding: 0 10px 15px;
+    color: #555;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Hidden cards */
+.hidden {
+    display: none;
+}
+
+/* Button */
+.view-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #D4AF37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ================= VIDEO TOUR SECTION ================= */
+
+.video-section {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+/* Small tag */
+.video-tag {
+    letter-spacing: 2px;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.video-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Video box */
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Play button */
+.video-container .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: #D4AF37;
+    color: #0a1f44;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* ================= FACULTY SECTION ================= */
+
+.faculty {
+    padding: 80px 0;
+    text-align: center;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff 40%,
+        #0a1f44 40%
+        
+    );
+}
+
+.faculty h2 {
+    margin-bottom: 40px;
+    color: #0a1f44;
+}
+
+.section-tag {
+    color: #888;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* ================= SLIDER ================= */
+
+.faculty-slider {
+    position: relative;
+    width: 100%;
+}
+
+/* Viewport */
+.faculty-viewport {
+    overflow: hidden;
+}
+
+/* Track */
+.faculty-track {
+    display: flex;
+    align-items: stretch;
+    transition: transform 0.5s ease;
+}
+
+/* ================= CARD ================= */
+
+.faculty-card {
+    min-width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Inner card box */
+.faculty-card > div {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    aspect-ratio: 9 / 16;   /* 🔥 MAIN FIX */
+}
+
+/* Image */
+.faculty-card img {
+    width: 100%;
+    height: 55%;   /* top portion */
+    object-fit: cover;
+}
+
+/* Info */
+.faculty-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.faculty-info h3 {
+    margin: 0;
+    color: #0a1f44;
+}
+
+.role {
+    color: #D4AF37;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+.faculty-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.socials {
+    margin-top: auto;
+}
+
+.socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0a1f44;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #D4AF37;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.faculty-card > div {
+    transition: all 0.35s ease;
+}
+
+.faculty-card:hover > div {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.08);
+
+}
+
+/* ================= NAV BUTTONS ================= */
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* Transparent glass effect */
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    color: white;
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+
+    z-index: 10;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.28);
+
+    transform: translateY(-50%) scale(1.08);
+}
+/* Left button */
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+.faculty-slider {
+    max-width: 1000px;   /* 🔥 controls total width */
+    margin: auto;        /* centers it */
+    position: relative;
+}
+.faculty-viewport {
+    overflow: hidden;
+    padding: 0 10px;
+}
+/* ================= EVENTS ================= */
+
+.events {
+    padding: 80px 0;
+    text-align: center;
+
+    background: linear-gradient(
+        to bottom,
+        #0a1f44 40%,
+        #ffffff 40%
+    );
+}
+
+.events h2,
+.events .section-tag {
+    color: white;
+}
+/* Grid centered */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+.event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Image */
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content layout */
+.event-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Date */
+.event-date {
+    background: #D4AF37;
+    color: #0a1f44;
+    padding: 15px;
+    text-align: center;
+    min-width: 70px;
+}
+
+/* Info */
+.event-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.event-info h4 {
+    margin: 0;
+    color: #0a1f44;
+}
+
+.event-info p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* ================= POPUP ================= */
+
+.event-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(10, 31, 68, 0.8);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+/* Popup card */
+.popup-content {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    width: 500px;
+    max-width: 90%;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    position: relative;
+
+    text-align: center;
+}
+
+/* Image */
+.popup-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Text */
+.popup-text {
+    padding: 20px;
+}
+
+.popup-text h2 {
+    color: #0a1f44;
+    margin-bottom: 10px;
+}
+
+.popup-time {
+    color: #D4AF37;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-text p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* ================= TESTIMONIALS ================= */
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+    padding: 80px 0;
+
+    background: linear-gradient(
+        to bottom,
+        #0a1f44 70%,
+        #ffffff 40%
+    );
+
+    text-align: center;
+}
+.testimonials h2,
+.testimonials .section-tag {
+    color: white;
+}
+
+/* Slider */
+.testimonial-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.testimonial-viewport {
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 20px;   /* 🔥 space between cards */
+    transition: transform 0.5s ease;
+}
+
+/* Card */
+.testimonial-card {
+    transition: all 0.3s ease;
+    min-width: calc(33.33% - 14px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.testimonial-card:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+    background: rgba(255,255,255,0.95);
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonial-card h3 {
+    margin: 10px 0 5px;
+    color: #0a1f44;
+}
+
+.role {
+    color: #D4AF37;
+    font-size: 14px;
+}
+
+.desc {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #D4AF37;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left {
+    left: -70px;
+}
+
+.right {
+    right: -70px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #0a1f44;
+    color: #ddd;
+    padding-top: 60px;
+}
+
+/* Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/* Headings */
+.footer-col h3,
+.footer-col h4 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #D4AF37;
+}
+
+/* Social */
+.socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #D4AF37;
+}
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+/* NAVBAR */
+.navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar nav a {
+    margin: 0;
+}
+
+/* HERO */
+.hero img {
+    height: 400px;
+}
+
+.hero-content {
+    left: 5%;
+    top: 30%;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+}
+
+/* COURSES / CARDS */
+.course-container,
+.event-container,
+.testimonial-container {
+    grid-template-columns: 1fr !important;
+}
+
+/* TESTIMONIAL SLIDER */
+.testimonial-card {
+    min-width: 100%;
+}
+
+/* FACULTY MINI SELECTOR */
+.faculty-mini-slider {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-btn,
+.right-btn {
+    position: static;
+}
+
+/* FACULTY PROFILE */
+.faculty-display {
+    max-width: 90%;
+}
+
+/* WORK IMAGES */
+.work-viewport {
+    width: 100%;
+    max-width: 300px;
+}
+
+.work-track img {
+    width: 100%;
+}
+
+/* FOOTER */
+.footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+}

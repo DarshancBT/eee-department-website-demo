@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    background: #D4AF37;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 40px;
+    font-size: 14px;
+}
+
+.top-left span {
+    margin-right: 20px;
+}
+
+.top-right a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.top-right a:hover {
+    color: #D4AF37;
+}
+.top-left a {
+    color: black;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.top-left a:hover {
+    color: #D4AF37;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1f44;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    background: #D4AF37;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 31, 68, 0.7);
+}
+
+/* Hero content */
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content span {
+    color: #D4AF37;
+}
+
+.tag {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cta {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #D4AF37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #0a1f44;
+    color: #ddd;
+    padding-top: 60px;
+}
+
+/* Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/* Headings */
+.footer-col h3,
+.footer-col h4 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #D4AF37;
+}
+
+/* Social */
+.socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #D4AF37;
+}
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+/* NAVBAR */
+.navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar nav a {
+    margin: 0;
+}
+
+/* HERO */
+.hero img {
+    height: 400px;
+}
+
+.hero-content {
+    left: 5%;
+    top: 30%;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+}
+
+/* COURSES / CARDS */
+.course-container,
+.event-container,
+.testimonial-container {
+    grid-template-columns: 1fr !important;
+}
+
+/* TESTIMONIAL SLIDER */
+.testimonial-card {
+    min-width: 100%;
+}
+
+/* FACULTY MINI SELECTOR */
+.faculty-mini-slider {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-btn,
+.right-btn {
+    position: static;
+}
+
+/* FACULTY PROFILE */
+.faculty-display {
+    max-width: 90%;
+}
+
+/* WORK IMAGES */
+.work-viewport {
+    width: 100%;
+    max-width: 300px;
+}
+
+.work-track img {
+    width: 100%;
+}
+
+/* FOOTER */
+.footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+}
