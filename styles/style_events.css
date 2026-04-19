@@ -305,14 +305,49 @@ transform:translateY(-3px);
 }
 /* Layout */
 .footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1100px;
-    margin: auto;
-    padding-bottom: 40px;
-}
 
+max-width:1100px;
+
+margin:0 auto;   /* 🔥 centers footer */
+
+padding:0 20px;
+}
+.footer {
+
+text-align:center;
+}
+.footer .logo{
+
+display:block;
+
+text-align:center;
+
+width:100%;
+
+line-height:1.4;
+}
+.college-name{
+
+display:block;
+
+font-size:28px;
+
+font-weight:700;
+
+color:#D4AF37;
+
+margin-bottom:8px;
+}
+.dept-name{
+
+display:block;
+
+font-size:20px;
+
+font-weight:500;
+
+color:#ddd;
+}
 /* Headings */
 .footer-col h3,
 .footer-col h4 {
